@@ -15,7 +15,7 @@ const forecastDays = document.querySelector(".forecast-days");
 const searchHistoryArray = [];
 
 const searchCity = () => {
-  const API_KEY = "e6bd2b4788c4a97929b4dd7c3827bbc7";
+  const API_KEY = "1171fa37ddf7bc9758c2d51c12c55040";
 
   if (searchInput.value === "") {
     alert("Please enter a city name");
