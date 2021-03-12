@@ -1,0 +1,136 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans";
+  line-height: 1.7;
+}
+
+li {
+  list-style: none;
+}
+
+/* HEADER */
+.header {
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  padding: 16px 0;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 40%;
+  background-color: #f4f4f4;
+  padding: 32px;
+  min-height: 100vh;
+}
+
+/* search input */
+.search-label {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#searchInput {
+  font-size: 24px;
+  padding: 8px 24px;
+  outline: none;
+}
+
+#searchInput:focus {
+  border: 3px solid #333;
+}
+
+#searchBtn {
+  border-radius: 10px;
+  background-color: rgb(0, 72, 255);
+  font-size: 24px;
+  padding: 8px;
+  margin-left: -10px;
+  color: #fff;
+  outline: none;
+}
+
+/* search history */
+.search-history {
+  margin-top: 16px;
+}
+
+.search-history-item {
+  font-size: 24px;
+  padding: 8px 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* MAIN CONTENT */
+.main {
+  width: 60%;
+  padding: 32px;
+  min-height: 100vh;
+}
+
+/* current city */
+.current-city {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.city-name {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.city-stats p {
+  margin-bottom: 16px;
+}
+
+.red {
+  background-color: rgb(245, 47, 47);
+  border-radius: 10px;
+  padding: 8px;
+  color: #fff;
+}
+
+/* forecast */
+.forecast-title {
+  font-size: 24px;
+}
+
+.forecast-days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* forecast card */
+.forecast-card {
+  background-color: rgb(0, 72, 255);
+  color: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 8px;
+}
+
+.forecast-card-date {
+  margin-bottom: 16px;
+}
+
+.forecast-card-icon {
+  margin: 32px 0;
+}
+
+.forecast-card-temp {
+  margin-bottom: 16px;
+}
