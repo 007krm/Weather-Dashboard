@@ -31,7 +31,7 @@ const searchCity = () => {
         const date = new Date();
         const currentDate = date.toLocaleDateString();
         const currentCityName = data.name;
-        const currentCityIconUrl = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        const currentCityIconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
         const currentCityTemp = data.main.temp;
         const currentCityHumidity = data.main.humidity;
         const currentCityWind = data.wind.speed;
@@ -75,7 +75,7 @@ const searchCity = () => {
               }/${date.getFullYear()}`;
 
               const img = document.createElement("img");
-              img.src = `http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
+              img.src = `https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
               img.className = "forecast-card-icon";
 
               const p1 = document.createElement("p");
@@ -104,7 +104,7 @@ const reSearchCity = (e) => {
   if (e.target.className === "search-history-item") {
     const API_KEY = "e6bd2b4788c4a97929b4dd7c3827bbc7";
     const reSearchCity = e.target.innerHTML;
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=${reSearchCity}&appid=${API_KEY}`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${reSearchCity}&appid=${API_KEY}`;
 
     fetch(URL)
       .then((res) => res.json())
@@ -112,7 +112,7 @@ const reSearchCity = (e) => {
         // get the data
         const currentDate = new Date().toLocaleDateString();
         const currentCityName = data.name;
-        const currentCityIconUrl = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        const currentCityIconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
         const currentCityTemp = data.main.temp;
         const currentCityHumidity = data.main.humidity;
         const currentCityWind = data.wind.speed;
@@ -158,7 +158,7 @@ const reSearchCity = (e) => {
               }/${date.getFullYear()}`;
 
               const img = document.createElement("img");
-              img.src = `http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
+              img.src = `https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png`;
               img.className = "forecast-card-icon";
 
               const p1 = document.createElement("p");
