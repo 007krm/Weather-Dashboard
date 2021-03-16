@@ -21,7 +21,7 @@ const searchCity = () => {
     alert("Please enter a city name");
   } else {
     const searchCity = searchInput.value;
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${API_KEY}`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${API_KEY}`;
 
     // current forecast
     fetch(URL)
